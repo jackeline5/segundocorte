@@ -1,0 +1,93 @@
+<header>
+  <app-nav-bar></app-nav-bar>
+</header>
+
+<div class="col-md-3"></div>
+<body>
+  <div class="container">
+    <!-- Show Case -->
+    <header class="showcase">
+      <h2>CENTRO DE SALUD</h2>
+      <p>
+        Brindamos un servicio donde puedes observar la lista de pacientes, 
+        los doctores y un espacio donde puedes reservar tu cita, todo a disposición suya.
+      </p>
+      <p>
+        ¡Anímate y conoce más de nosotros!
+      </p>
+      <a [routerLink]="['/about']" class="btn"
+        >Saber más<em class="fas fa-angle.double.right"></em
+      ></a>
+    </header>
+
+    <!-- News Cards-->
+    <div class="news-cards">
+      <div>
+        <img src="../assets/img/Patient.jpg" alt="Patients" />
+        <h3>Acerca de los pacientes</h3>
+        <p>
+          En esta sección encontrarás una lista de los pacientes que hacen parte del Centro de Salud, donde si gustas puedes registrarte y ser parte de este proceso, donde brindaremos un buen servicio.
+        </p>
+        <button
+          type="button"
+          name="button"
+          class="btn btn-primary"
+          [routerLink]="['/patient/findAll']"
+        >
+          <em class="fas fa-angle-double-right"></em> Pacientes
+        </button>
+      </div>
+
+
+      <div>
+        <img src="../../assets/img/Doctor.jpg" alt="Doctors" />
+        <h3>Acerca de los doctores</h3>
+        <p>
+          En esta sección hace parte de la lista de doctores que estarán dispuestos de atenderlos, 
+          teniendo en cuenta con el rol que ellos cumplen o la especialidad que tiene cada uno, además, 
+          como el horario de atención.
+        </p>
+        <button
+          type="button"
+          name="button"
+          class="btn btn-primary"
+          [routerLink]="['/doctor/findAll']"
+        >
+          <em class="fas fa-angle-double-right"></em> Doctores
+        </button>
+      </div>
+
+      <div>
+        <img src="../../assets/img/Appointments.jpg" alt="Appointments" />
+        <h3>Acerca de las citas</h3>
+        <p>
+          Aquí puedes reservar tu cita y elegir el doctor con el cual quieres ser atendido(a), además, 
+          escoger la fecha y hora en que deseas que sea tuc ita, siempre y cuando teniendo en cuenta 
+          el tiempo de los demás y la disponibilidad.
+        </p>
+        <button
+          type="button"
+          name="button"
+          class="btn btn-primary"
+          [routerLink]="['/appointment/findAll']"
+        >
+          <em class="fas fa-angle-double-right"></em> Citas
+        </button>
+      </div>
+    </div>
+
+    <section class="cards-banner-two">
+      <div class="content">
+        <h2>Ten en cuenta que...</h2>
+        <p>
+          Si deseas conocer más información sobre nuestros servicios o de nosotros no dudes en
+           contáctarnos que nosotros responderemos a tus solicitudes lo más pronto posible.
+        </p>
+        <a href="#" class="btn"
+          >Contactanos ! <em class="fas fa-angle-double-right"></em
+        ></a>
+      </div>
+    </section>
+  </div>
+  <app-footer></app-footer>
+</body>
